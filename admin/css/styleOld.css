@@ -1,0 +1,216 @@
+.chip {
+  margin-left: 90px;
+  margin-top: 100px;
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  #table{
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: 50px;
+  }
+
+  
+body{
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  background: linear-gradient(120deg,#2980b9, #2980b9);
+  height: 100vh;
+  overflow: auto;
+
+}
+
+#nav{
+  background: linear-gradient(120deg,#2980b9, #2980b9);   
+  position: fixed;
+  width: 100%;
+}
+
+#nav a{
+  color:white;
+}
+#nav button{
+  color: white;
+  border: white;
+}
+#nav button:hover{
+  background: #8e44ad;
+}
+  
+  .sidenav {
+    margin-top: 90px;
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2980b9;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 190px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+   
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.center{
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+
+}
+
+.center h2{
+
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver ;
+  
+}
+
+.center form{
+  margin-left: 30px;
+margin-top: 100px;
+  padding: 0 40px ;
+  box-sizing: border-box;
+
+}
+
+form .text{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+
+}
+
+
+.text input{
+
+  width: 50%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  color: aliceblue;
+  background: none;
+  outline: none;
+
+}
+
+.text label{
+
+  position: absolute;
+  top: 70%;
+  left: 5px;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+
+
+}
+.text span::before{
+
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .5s;
+
+}
+.text input:focus ~ label,
+.text input:valid ~ label{
+  top: -5px;
+  color: white;
+}
+
+.text input:focus ~ span::before,
+.text input:valid ~ span::before{
+
+  width: 100%;
+
+}
+
+
+input[type= "submit"]{
+
+  width: 50%;
+  height: 50px;
+  border: 1px solid ;
+  background: #8e44ad;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+
+
+}
+
+input[type= "submit"]:hover{
+
+  border-color: #2980b9;
+  transition: .5s;
+
+}
+
+.tableCenter{
+  position: absolute;
+  
+}
+
+
+#chart{
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+  
